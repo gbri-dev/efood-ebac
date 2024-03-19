@@ -1,9 +1,9 @@
-import { StyledGlobal } from './styles'
+import StylesGlobal from './styles'
 
 function App() {
   return (
     <div>
-      <StyledGlobal />
+      <StylesGlobal />
       <h1>efood</h1>
     </div>
   )
