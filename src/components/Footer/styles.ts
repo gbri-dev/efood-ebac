@@ -10,6 +10,10 @@ export const FooterS = styled.footer`
   small {
     padding-top: 40px;
   }
+
+  img {
+    height: 57.5px;
+  }
 `
 
 export const RedesS = styled.ul`
@@ -19,5 +23,9 @@ export const RedesS = styled.ul`
   margin: 40px;
   li {
     margin: 0 8px;
+
+    img {
+      height: 28px;
+    }
   }
 `
