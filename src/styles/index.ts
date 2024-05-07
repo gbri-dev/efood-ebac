@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import garfosFacas from '../assets/images/garfoFaca.svg'
 
 export const cores = {
   branca: '#eee',
@@ -28,6 +29,11 @@ const StylesGlobal = createGlobalStyle`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .theme {
+    padding: 40px 0;
+    background-image: url(${garfosFacas});
   }
 `
 

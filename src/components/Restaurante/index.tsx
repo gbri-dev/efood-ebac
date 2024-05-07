@@ -1,7 +1,7 @@
 import { Card, CardHead, CardMain, Button } from './styles'
 import estrela from '../../assets/images/estrela.svg'
 
-const Restaurantes = () => (
+const Restaurante = () => (
   <Card>
     <CardHead>
       <img src="https://placeholder.com/470x280" alt="produto" />
@@ -23,4 +23,4 @@ const Restaurantes = () => (
   </Card>
 )
 
-export default Restaurantes
+export default Restaurante

@@ -1,13 +1,13 @@
 import { Main } from './styles'
-import Restaurantes from '../../components/Restaurantes'
+import Restaurante from '../../components/Restaurante'
 
 const Home = () => (
   <div className="container">
     <Main>
-      <Restaurantes />
-      <Restaurantes />
-      <Restaurantes />
-      <Restaurantes />
+      <Restaurante />
+      <Restaurante />
+      <Restaurante />
+      <Restaurante />
     </Main>
   </div>
 )
