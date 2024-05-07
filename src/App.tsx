@@ -1,11 +1,16 @@
+import { BrowserRouter } from 'react-router-dom'
+
 import StylesGlobal from './styles'
+import Rotas from './routes'
+import Header from './components/Header'
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <StylesGlobal />
-      <h1>efood</h1>
-    </div>
+      <Header />
+      <Rotas />
+    </BrowserRouter>
   )
 }
 
