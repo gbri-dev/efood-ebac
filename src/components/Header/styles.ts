@@ -16,3 +16,18 @@ export const HeaderHome = styled.header`
     margin-bottom: 40px;
   }
 `
+
+export const HeaderRestaurante = styled.header`
+  max-width: 1024px;
+  width: 100%;
+  height: 186px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 57.5px;
+    margin-bottom: 0;
+  }
+`

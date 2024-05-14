@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
@@ -8,9 +9,6 @@ export const Card = styled.div`
 `
 
 export const CardHead = styled.div`
-  font-weight: 700;
-  font-size: 18px;
-
   img {
     width: 100%;
     height: 240px;
@@ -18,8 +16,7 @@ export const CardHead = styled.div`
   > div {
     display: flex;
     justify-content: space-between;
-    padding: 2px 8px;
-
+    padding: 0 8px;
     span {
       display: flex;
       align-items: center;
@@ -28,22 +25,29 @@ export const CardHead = styled.div`
         height: 21px;
       }
     }
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
   }
 `
 
 export const CardMain = styled.div`
-  padding: 8px;
-
-  p {
-    padding-bottom: 8px;
-  }
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 16px;
 `
 
-export const Button = styled.button`
+export const Button = styled(Link)`
+  max-width: 112px;
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  line-height: 16.41px;
   font-weight: bold;
-  font-size: 16px;
-  padding: 8px 16px;
+  font-size: 14px;
+  padding: 8px 0;
   border: none;
   color: ${cores.buttonText};
   background-color: ${cores.texto};

@@ -18,7 +18,7 @@ const Restaurante = () => (
         distinctio sequi, laudantium unde aperiam praesentium a? Eaque vero
         facere pariatur perspiciatis nihil.
       </p>
-      <Button>Saiba Mais</Button>
+      <Button to="/restaurante/1">Saiba Mais</Button>
     </CardMain>
   </Card>
 )

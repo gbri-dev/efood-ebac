@@ -4,7 +4,8 @@ export const Main = styled.main`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 80px;
   padding: 83.33px 0;
 
   @media (max-width: 768px) {
