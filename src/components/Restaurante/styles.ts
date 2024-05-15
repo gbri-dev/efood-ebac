@@ -4,6 +4,7 @@ import { cores } from '../../styles'
 
 export const Card = styled.div`
   max-width: 472px;
+  overflow: hidden;
   height: 398px;
   border: solid 1px ${cores.texto};
 `

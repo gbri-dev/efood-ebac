@@ -13,10 +13,14 @@ export const Prato = styled.div`
   img {
     width: 100%;
   }
-
+  h3 {
+    weight: 900;
+    line-height: 18.75px;
+    font-size: 16px;
+  }
   p {
-    margin: 8px 0;
-    weight: 400;
+    margin-top: 8px;
+    margin-bottom: 8px;
     font-size: 14px;
     line-height: 22px;
   }
