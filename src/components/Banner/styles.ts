@@ -37,6 +37,10 @@ export const Banner = styled.div`
 
     @media (max-width: 1024px) {
       width: 100%;
+      padding: 24px;
+      h1 {
+        line-height: 57.5px;
+      }
     }
   }
 

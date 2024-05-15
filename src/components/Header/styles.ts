@@ -36,5 +36,9 @@ export const HeaderRestaurante = styled(HeaderHome)`
     justify-content: space-between;
     flex-flow: row wrap;
     align-items: center;
+    @media (max-width: 1024px) {
+      flex-direction: row;
+      padding: 0 24px;
+    }
   }
 `
