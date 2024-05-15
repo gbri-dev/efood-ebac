@@ -13,6 +13,9 @@ const RestauranteDetalhes = () => {
           <Prato />
           <Prato />
           <Prato />
+          <Prato />
+          <Prato />
+          <Prato />
         </div>
       </Detalhes>
     </>

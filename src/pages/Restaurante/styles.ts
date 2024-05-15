@@ -6,6 +6,7 @@ export const Detalhes = styled.div`
 
   .container {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
     padding: 40px 0;
   }
