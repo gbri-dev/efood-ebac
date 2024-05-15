@@ -34,6 +34,10 @@ export const Banner = styled.div`
     h1 {
       font-weight: 900;
     }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
   }
 
   &::after {
