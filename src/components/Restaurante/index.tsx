@@ -1,10 +1,10 @@
 import { Card, CardHead, CardMain, Button } from './styles'
 import estrela from '../../assets/images/estrela.svg'
-
+import restauranteImg from '../../assets/images/restaurante-italiano.png'
 const Restaurante = () => (
   <Card>
     <CardHead>
-      <img src="https://placeholder.com/470x280" alt="produto" />
+      <img src={restauranteImg} alt="produto" />
       <div>
         <h3>Nome do restaurante</h3>
         <span>
