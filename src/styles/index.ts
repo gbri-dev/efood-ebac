@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import garfosFacas from '../assets/images/garfoFaca.svg'
 
 export const cores = {
-  branca: '#eee',
+  branca: '#FFFFFF',
   preta: '#111',
   cinza: '#333',
   verde: '#10AC84',
@@ -12,6 +12,9 @@ export const cores = {
   buttonText: '#FFEBD9'
 }
 
+export const LogoEfood = styled.img`
+  height: 57.5px;
+`
 const StylesGlobal = createGlobalStyle`
   * {
       margin: 0;
@@ -32,7 +35,7 @@ const StylesGlobal = createGlobalStyle`
   }
 
   .theme {
-    padding: 40px 0;
+    width: 100%;
     background-image: url(${garfosFacas});
   }
 `

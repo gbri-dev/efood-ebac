@@ -1,35 +1,35 @@
-import { HeaderHome, HeaderRestaurante } from './styles'
+import * as S from './styles'
 import logo from '../../assets/images/logo.svg'
 import { useNavigate } from 'react-router-dom'
+import { LogoEfood } from '../../styles'
 
 type Props = {
   mostrarCarrinho: boolean
+  tituloConteudo: string
 }
 
-const Header = ({ mostrarCarrinho }: Props) => {
+const Header = ({ mostrarCarrinho, tituloConteudo }: Props) => {
   const navigate = useNavigate()
 
   return (
-    <>
-      {!mostrarCarrinho ? (
-        <HeaderHome className="theme">
-          <img src={logo} alt="EFOOD" />
-          <h1>
-            Viva experiências gastronômicas <br /> no conforto da sua casa
-          </h1>
-        </HeaderHome>
-      ) : (
-        <HeaderRestaurante className="theme">
-          <div className="carContainer">
-            <h1>Restaurantes</h1>
+    <div className="theme">
+      <div className="container">
+        {!mostrarCarrinho ? (
+          <S.Header $primary>
+            <LogoEfood src={logo} alt="EFOOD" />
+            <S.TituloHead $primary>{tituloConteudo}</S.TituloHead>
+          </S.Header>
+        ) : (
+          <S.Header>
+            <S.TituloHead>{tituloConteudo}</S.TituloHead>
             <div>
-              <img src={logo} alt="EFOOD" onClick={() => navigate('/')} />
+              <LogoEfood src={logo} alt="EFOOD" onClick={() => navigate('/')} />
             </div>
             <p>0 produto(s) no carrinho</p>
-          </div>
-        </HeaderRestaurante>
-      )}
-    </>
+          </S.Header>
+        )}
+      </div>
+    </div>
   )
 }
 

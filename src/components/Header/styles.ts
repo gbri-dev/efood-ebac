@@ -1,44 +1,20 @@
 import styled from 'styled-components'
 
-export const HeaderHome = styled.header`
+export const Header = styled.header<{ $primary?: boolean }>`
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: ${(props) => (props.$primary ? 'column' : 'row')};
   justify-content: space-between;
   align-items: center;
-  height: 384px;
-  padding-top: 64px;
+  height: ${(props) => (props.$primary ? '384px' : '186px')};
+  padding: 40px 0;
   font-weight: 900;
   text-align: center;
-  h1 {
-    font-size: 36px;
-    line-height: 42.19px;
-  }
-
-  img {
-    height: 57.5px;
-  }
 `
-
-export const HeaderRestaurante = styled(HeaderHome)`
-  height: 186px;
-
-  h1 {
-    font-size: 18px;
-    line-height: 21.09px;
-  }
-
-  .carContainer {
-    max-width: 1024px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: center;
-    @media (max-width: 1024px) {
-      flex-direction: row;
-      padding: 0 24px;
-    }
-  }
+export const TituloHead = styled.h1<{ $primary?: boolean }>`
+  max-width: 539px;
+  font-weight: 900;
+  font-size: ${(props) => (props.$primary ? '36px' : '18px')};
+  line-height: 42.19px;
+  text-align: center;
 `

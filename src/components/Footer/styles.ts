@@ -1,18 +1,15 @@
 import styled from 'styled-components'
 
 export const FooterS = styled.footer`
-  padding-top: 40px;
+  height: 298px;
+  padding: 40px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
-  small {
-    padding-top: 40px;
-  }
-
-  img {
-    height: 57.5px;
+  .mb {
+    margin-bottom: 32.5px;
   }
 `
 
@@ -20,7 +17,7 @@ export const RedesS = styled.ul`
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 40px;
+  margin-bottom: 80px;
   li {
     margin: 0 8px;
 

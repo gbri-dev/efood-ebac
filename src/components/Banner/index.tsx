@@ -1,16 +1,13 @@
 import * as S from './styles'
+import bannerImg from '../../assets/images/banner-italia.png'
 
-const Banner = () => {
-  const enderecoImg =
-    'https://cdn.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg'
-  return (
-    <S.Banner style={{ backgroundImage: `url(${enderecoImg})` }}>
-      <div className="bannerContainer">
-        <p>Italiana</p>
-        <h1>La Dolce Vita Trattoria</h1>
-      </div>
-    </S.Banner>
-  )
-}
+const Banner = () => (
+  <S.Imagem style={{ backgroundImage: `url(${bannerImg})` }}>
+    <S.ConteudoBanner className="container">
+      <S.Titulo>Italiana</S.Titulo>
+      <S.Nome>La Dolce Vita Trattoria</S.Nome>
+    </S.ConteudoBanner>
+  </S.Imagem>
+)
 
 export default Banner

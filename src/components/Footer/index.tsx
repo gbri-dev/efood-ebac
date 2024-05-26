@@ -4,10 +4,11 @@ import twitterIcon from '../../assets/images/twitter.svg'
 import instagramIcon from '../../assets/images/instagram.svg'
 
 import { FooterS, RedesS } from './styles'
+import { LogoEfood } from '../../styles'
 
 const Footer = () => (
   <FooterS className="theme">
-    <img src={logo} alt="EFOOD" />
+    <LogoEfood src={logo} alt="EFOOD" className="mb" />
     <RedesS>
       <li>
         <a href="#">

@@ -4,15 +4,16 @@ import Header from '../../components/Header'
 
 const Home = () => (
   <>
-    <Header mostrarCarrinho={false} />
-    <div className="container">
-      <Main>
-        <Restaurante />
-        <Restaurante />
-        <Restaurante />
-        <Restaurante />
-      </Main>
-    </div>
+    <Header
+      mostrarCarrinho={false}
+      tituloConteudo="Viva experiências gastronômicas no conforto da sua casa"
+    />
+    <Main className="container">
+      <Restaurante />
+      <Restaurante />
+      <Restaurante />
+      <Restaurante />
+    </Main>
   </>
 )
 
