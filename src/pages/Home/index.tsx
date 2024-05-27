@@ -1,5 +1,5 @@
 import { Main } from './styles'
-import Restaurante from '../../components/Restaurante'
+import Restaurante from '../../components/Restaurante/Card'
 import Header from '../../components/Header'
 
 const Home = () => (

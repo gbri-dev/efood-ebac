@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { cores } from '../../../styles'
 
 export const Card = styled.div`
   max-width: 472px;

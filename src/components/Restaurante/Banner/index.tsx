@@ -1,5 +1,5 @@
 import * as S from './styles'
-import bannerImg from '../../assets/images/banner-italia.png'
+import bannerImg from '../../../assets/images/banner-italia.png'
 
 const Banner = () => (
   <S.Imagem style={{ backgroundImage: `url(${bannerImg})` }}>

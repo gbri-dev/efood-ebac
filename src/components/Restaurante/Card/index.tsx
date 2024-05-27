@@ -1,6 +1,6 @@
 import { Card, CardHead, CardMain, Button } from './styles'
-import estrela from '../../assets/images/estrela.svg'
-import restauranteImg from '../../assets/images/restaurante-italiano.png'
+import estrela from '../../../assets/images/estrela.svg'
+import restauranteImg from '../../../assets/images/restaurante-italiano.png'
 const Restaurante = () => (
   <Card>
     <CardHead>
