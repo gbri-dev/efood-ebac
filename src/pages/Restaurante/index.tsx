@@ -9,12 +9,12 @@ const RestauranteDetalhes = () => {
       <Header mostrarCarrinho tituloConteudo="Restaurantes" />
       <Banner />
       <Detalhes className="container">
-        <Prato />
-        <Prato />
-        <Prato />
-        <Prato />
-        <Prato />
-        <Prato />
+        <Prato id={1} />
+        <Prato id={1} />
+        <Prato id={1} />
+        <Prato id={1} />
+        <Prato id={1} />
+        <Prato id={1} />
       </Detalhes>
     </>
   )
