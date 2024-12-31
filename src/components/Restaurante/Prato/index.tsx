@@ -32,25 +32,22 @@ const Prato = ({ id }: Props) => {
     }).format(preco)
   }
 
-  console.log(cardapioDados)
   return (
     <>
-      <S.Prato>
-        <img
-          src="https://cdn.pixabay.com/photo/2020/06/08/16/49/pizza-5275191_1280.jpg"
-          alt="prato"
-        />
-        <div>
-          <h3>Pizza</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-            aliquam.
-          </p>
-        </div>
-        <S.Button onClick={() => setIsOpenModal(!isOpenModal)}>
-          Adicionar ao carrinho
-        </S.Button>
-      </S.Prato>
+      {cardapioDados?.map((prato) => (
+        <S.Prato key={prato.id}>
+          <img src={prato.foto} alt="prato" />
+          <div>
+            <h3>{prato.nome}</h3>
+            <p>{prato.descricao}</p>
+            <p>{prato.porcao}</p>
+            <p>{formataPreco(prato.preco)}</p>
+          </div>
+          <S.Button onClick={() => setIsOpenModal(!isOpenModal)}>
+            Adicionar ao carrinho
+          </S.Button>
+        </S.Prato>
+      ))}
       <ModalAdd isOpenModal={isOpenModal} />
     </>
   )
