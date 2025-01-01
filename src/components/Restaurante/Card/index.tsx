@@ -1,6 +1,5 @@
-import { Card, CardHead, CardMain, Button } from './styles'
 import estrela from '../../../assets/images/estrela.svg'
-// import restauranteImg from '../../../assets/images/restaurante-italiano.png'
+import { Button, Card, CardHead, CardMain } from './styles'
 
 type Props = {
   capa: string
@@ -22,7 +21,11 @@ const Restaurante = ({ capa, titulo, classificacao, descricao, id }: Props) => (
       </div>
     </CardHead>
     <CardMain>
-      <p>{descricao}</p>
+      <p>
+        {descricao.length > 120
+          ? `${descricao.substring(0, 120)}...`
+          : descricao}
+      </p>
       <Button to={`/restaurante/${id}`}>Saiba Mais</Button>
     </CardMain>
   </Card>
